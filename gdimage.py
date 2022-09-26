@@ -1,5 +1,6 @@
 import sys
 from basefunc import *
+from keepOut import keepOut
 
 loadFuncList()
 if len(sys.argv) == 1:
