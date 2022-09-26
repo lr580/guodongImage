@@ -1,0 +1,5 @@
+#DEF printHelp help h
+查看帮助文档。后可以接一个参数，代表具体的功能说明。
+如: python gdimage.py -h 或 python gdimage.py -h version
+#DEF printVersion version v
+查看当前版本
