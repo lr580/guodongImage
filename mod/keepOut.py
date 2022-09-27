@@ -32,5 +32,5 @@ def keepOutOpe(src, desc, limx, limy):
             img1[i+ox][j+oy] = img2[x][y]
 
     plt.imshow(img1)
-    plt.savefig(desc, bboax_inches='tight')
+    plt.savefig(desc, bbox_inches='tight')
     print('[keepOut]%s保存成功' % desc)

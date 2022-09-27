@@ -1,4 +1,3 @@
-from fileinput import filename
 import os
 
 
@@ -26,3 +25,10 @@ def batchRun(src, des, f, *extParam):
             fileName = os.path.split(i)[1]
             newDes = os.path.join(des, fileName)
             f(*([i, newDes] + list(extParam)))
+
+
+def gcd(a, b):
+    return gcd(b, a % b) if b > 0 else a
+
+
+

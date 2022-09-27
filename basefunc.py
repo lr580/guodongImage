@@ -1,4 +1,6 @@
 # 将参数列表转化为命令列表，元素为 [命令名, 参数...]
+
+
 def paraSplit(argv):
     argv.append('--end')  # 尾处理
     res = []
@@ -58,4 +60,4 @@ def printHelp(*funcName):
 
 
 def printVersion():
-    print('当前版本: 0.0.2')
+    print('当前版本: 0.0.3')
