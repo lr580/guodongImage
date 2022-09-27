@@ -58,4 +58,4 @@ def printHelp(*funcName):
 
 
 def printVersion():
-    print('当前版本: 0.0.1')
+    print('当前版本: 0.0.2')

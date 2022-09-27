@@ -12,13 +12,18 @@
 
 3. `keepOut` 生成一张 `不要靠近xx，会变得不幸` 的定制图片
 
-   参数:图片完整路径(目前仅支持jpg) 输出路径
+   参数:图片完整路径 输出路径
 
    如：`python gdimage.py --keepOut sample.jpg out.jpg`
+
+   或参数:输入图片文件夹 输出文件夹。这将把输入图片文件夹里所有文件(含子目录)做一次处理，输出到目标文件夹里(名字同名,但目标文件夹没有子目录嵌套)(以下指令同理)
+   如 `python gdimage.py imgs result`
 
    示例效果：
 
    ![keepOutSample](readmeimg/keepOutSample.jpg)
+
+   建议：输入的图片尽可能使方形的且大小大于180x180
 
 4. `capooEat` 生成一张 `capoo` 定制图片 (制作中)
 
