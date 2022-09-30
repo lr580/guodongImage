@@ -4,6 +4,7 @@
 #DEF printVersion version v
 查看当前版本
 #DEF keepOut keepOut
+生成一张定制表情包，内容为不要靠近xx，会变得不幸。
 参数:图片完整路径(支持jpg,png) 输出路径
 如：python gdimage.py --keepOut sample.jpg out.jpg
 或参数:输入图片文件夹 输出文件夹。这将把输入图片文件夹里所有文件(含子目录)做一次处理，输出到目标文件夹里(名字同名,但目标文件夹没有子目录嵌套)(其他指令同理)
@@ -13,5 +14,14 @@
 只选取一张图片灰度范围在[low,high]的并将其拉伸到[0,255]
 参数:源图片路径 输出文件路径 low high 是否为黑白图
 后三个参数可以省略，默认为min原图,max原图,False；如果min/max填N也默认
-如：python gdimage.py --histSpan sample.jpg out.jpg
+如 python gdimage.py --histSpan sample.jpg out.jpg
 如 python gdimage.py --histSpan img2.tiff out.tiff n n true
+#DEF idk idk
+生成一张定制表情包，内容为让xx告诉你吧，啊这，他说不知道。
+参数：图片路径 输出路径 名称
+如 python gdimage.py --idk sample.jpg out.jpg lr580
+参数：图片路径 输出路径 名称 性别代词(默认是他)
+如 python gdimage.py --idk sample.jpg out.jpg 禾枫 她
+参数：图片路径 输出路径 + 语句1 语句2 语句3 语句4
+如 python gdimage.py --idk sample.jpg out.jpg + 你发现了一只lr580！ lr580 快告诉我吧！ [请选择:告诉Y/不告诉N]
+建议图片大小不小于 500x500，输入文字里不能含空格和减号"-"。

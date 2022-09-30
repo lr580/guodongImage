@@ -25,14 +25,26 @@
 
    建议：输入的图片尽可能使方形的且大小大于180x180
 
-4. `histSpan` 只选取一张图片灰度范围在[low,high]的并将其拉伸到[0,255]。效果同 `matlab` 的 `imshow(,[])`。
+4. `idk`
+
+   生成一张定制表情包，内容为让xx告诉你吧，啊这，他说不知道。
+   参数：图片路径 输出路径 名称
+   如 `python gdimage.py --idk sample.jpg out.jpg lr580`
+   参数：图片路径 输出路径 名称 性别代词(默认是他)
+   如 `python gdimage.py --idk sample.jpg out.jpg 禾枫 她`
+   参数：图片路径 输出路径 + 语句1 语句2 语句3 语句4
+   如 `python gdimage.py --idk sample.jpg out.jpg + 你发现了一只lr580！ lr580 快告诉我吧！ [请选择:告诉Y/不告诉N]`
+
+   建议图片大小不小于 500x500，输入文字里不能含空格和 `-`。
+
+5. `histSpan` 只选取一张图片灰度范围在[low,high]的并将其拉伸到[0,255]。效果同 `matlab` 的 `imshow(,[])`。
 
    参数:源图片路径 输出文件路径 low high 是否为黑白图
    后三个参数可以省略，默认为min原图,max原图,False；如果min/max填N也默认
 
    如： `python gdimage.py --histSpan sample.jpg out.jpg`
 
-5. `capooEat` 生成一张 `capoo` 定制图片 (制作中)
+6. `capooEat` 生成一张 `capoo` 定制图片 (制作中)
 
 
 
