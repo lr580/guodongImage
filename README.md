@@ -8,6 +8,8 @@
 
    如：`python gdimage.py -h`，会输出帮助文档。
 
+   如：`python gdimage.py -h keepOut` 会输出 `keepOut` 指令的帮助。
+
 2. 查看版本信息 `--version` 或 `-v`。
 
 3. `keepOut` 生成一张 `不要靠近xx，会变得不幸` 的定制图片
@@ -28,11 +30,17 @@
 4. `idk`
 
    生成一张定制表情包，内容为让xx告诉你吧，啊这，他说不知道。
+
    参数：图片路径 输出路径 名称
+
    如 `python gdimage.py --idk sample.jpg out.jpg lr580`
+
    参数：图片路径 输出路径 名称 性别代词(默认是他)
+
    如 `python gdimage.py --idk sample.jpg out.jpg 禾枫 她`
+
    参数：图片路径 输出路径 + 语句1 语句2 语句3 语句4
+
    如 `python gdimage.py --idk sample.jpg out.jpg + 你发现了一只lr580！ lr580 快告诉我吧！ [请选择:告诉Y/不告诉N]`
 
    建议图片大小不小于 500x500，输入文字里不能含空格和 `-`。
@@ -45,6 +53,12 @@
    如： `python gdimage.py --histSpan sample.jpg out.jpg`
 
 6. `capooEat` 生成一张 `capoo` 定制图片 (制作中)
+
+7. `resize` 或 `-s`，修改图片大小，具体请参见 `python gdimage.py -h resize`
+
+   如：`python gdimage.py -s sample.jpg out.jpg 1024 256`
+
+   如：`python gdimage.py -s sample.jpg out.jpg x1.5`
 
 
 

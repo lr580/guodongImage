@@ -49,15 +49,16 @@ def loadFuncList():
             helpText += i
 
 
-def printHelp(*funcName):
+def printHelp(funcName):
     if len(funcName):
-        if not funcName[0] in paraMap.keys():
+        if not funcName in paraMap.keys():
             print('指令不存在')
         else:
-            print(helpList[paraMap[funcName[0]]])
-    for i in helpList:
-        print(helpList[i], end='')
+            print(helpList[paraMap[funcName]])
+    else:
+        for i in helpList:
+            print(helpList[i], end='')
 
 
 def printVersion():
-    print('当前版本: 0.0.4')
+    print('当前版本: 0.0.5')

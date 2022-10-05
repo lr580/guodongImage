@@ -25,3 +25,20 @@
 参数：图片路径 输出路径 + 语句1 语句2 语句3 语句4
 如 python gdimage.py --idk sample.jpg out.jpg + 你发现了一只lr580！ lr580 快告诉我吧！ [请选择:告诉Y/不告诉N]
 建议图片大小不小于 500x500，输入文字里不能含空格和减号"-"。
+#DEF resize resize s
+参数：图片路径 输出路径 长 宽
+不采用原图长宽比，强行将原图缩放为长x宽(像素)
+参数：图片路径 输出路径 x倍数
+采用原图长宽比，将原图长宽乘以倍数
+参数：图片路径 输出路径 长 0
+采用原图长宽比，计算出宽度
+参数：图片路径 输出路径 0 宽
+采用原图长宽比，计算出长度
+参数：上述格式+采样方式，可以是 nearest, box, bilinear, hamming, bicubic, lanczos。
+如 python gdimage.py -s sample.jpg out.jpg 1024 256
+如 python gdimage.py -s sample.jpg out.jpg x1.5
+如 python gdimage.py -s sample.jpg out.jpg 1024 0
+如 python gdimage.py -s sample.jpg out.jpg 0 64
+如 python gdimage.py -s sample.jpg out.jpg x2 0 bilinear
+如 python gdimage.py -s sample.jpg out.jpg 1024 1024 bilinear
+注：低分辨率图片转高分辨率，推荐使用lanczos或bilinear等方式，以更好地减免马赛克。默认采用nearest的方式不会消除马赛克。
