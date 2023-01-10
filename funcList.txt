@@ -42,3 +42,10 @@
 如 python gdimage.py -s sample.jpg out.jpg x2 0 bilinear
 如 python gdimage.py -s sample.jpg out.jpg 1024 1024 bilinear
 注：低分辨率图片转高分辨率，推荐使用lanczos或bilinear等方式，以更好地减免马赛克。默认采用nearest的方式不会消除马赛克。
+#DEF convert convert cvt c
+参数：图片路径 输出文件
+如 python gdimage.py -c sample.webp sample.gif
+参数：图片文件夹路径 输出文件夹路径 输出格式
+如 python gdimage.py -c test testres png
+将所有输入的图片转化为指定格式
+目前支持的格式转换有 jpg, png, gif, webp 等常见的格式(即 PIL 包支持的所有格式)

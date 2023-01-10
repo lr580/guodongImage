@@ -60,5 +60,11 @@
 
    如：`python gdimage.py -s sample.jpg out.jpg x1.5`
 
+8. `convert` 或 `cvt` 或 `-c`，图片格式转换，具体请参见 `python gdimage.py -h convert`
+
+   如： `python gdimage.py -c sample.webp sample.gif`
+
+   如：`python gdimage.py -c test testres png` (文件夹内图片批量转换)
+
 
 
