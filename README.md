@@ -25,7 +25,7 @@
 
    ![keepOutSample](readmeimg/keepOutSample.jpg)
 
-   建议：输入的图片尽可能使方形的且大小大于180x180
+   建议：输入的图片尽可能是方形的且大小大于180x180
 
 4. `idk`
 
@@ -60,11 +60,17 @@
 
    如：`python gdimage.py -s sample.jpg out.jpg x1.5`
 
+   已知不适用 gif 动图
+
 8. `convert` 或 `cvt` 或 `-c`，图片格式转换，具体请参见 `python gdimage.py -h convert`
 
    如： `python gdimage.py -c sample.webp sample.gif`
 
    如：`python gdimage.py -c test testres png` (文件夹内图片批量转换)
+
+9. `tea`，生成一张喝茶表情包，具体请参见 `python gdimage.py -h tea`
+
+   如：`python gdimage.py --tea out.jpg 白茶`
 
 
 

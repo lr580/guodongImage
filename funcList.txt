@@ -49,3 +49,9 @@
 如 python gdimage.py -c test testres png
 将所有输入的图片转化为指定格式
 目前支持的格式转换有 jpg, png, gif, webp 等常见的格式(即 PIL 包支持的所有格式)
+#DEF tea tea
+生成一张定制表情包，内容为喝一杯名为xx的茶。
+参数：输出路径 茶名 风格
+风格可不填，默认是可爱风(0)；如果填1，则代表暴漫风。
+如：python gdimage.py --tea out.jpg 白茶
+如：python gdimage.py --tea out2.jpg 白茶 1
